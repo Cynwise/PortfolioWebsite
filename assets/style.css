@@ -1,5 +1,6 @@
 :root{
     --mainGreen: #264d00;
+    overflow-x:hidden;
 }
 
 * {
@@ -67,7 +68,7 @@
 /*  */
 /*  */
 .content {
-    width: 75%;
+    width: 90%; /*used to be 75%*/
     display: inline-block;
     margin-left: 20px;
 }
@@ -75,20 +76,49 @@
 .about-me {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    max-height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--mainGreen);
     color: #ffffff;
 }
 
+.about-me h2{
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
 .my-work {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    max-height: 700px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--mainGreen);
     color: #ffffff;
 }
+
+.my-work h2{
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+.projectPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 0;
+    padding: 5px;
+    width: 125%;
+    /* text-align: right; */
+    /* border-style: solid; */
+    border-width: 5px;
+  }
+
+.projectPhotos img{
+    /* max-height: 200px; */
+    flex-wrap: wrap;
+    max-width: 25%;
+    margin: 10px 10px 10px 10px;
+}
+
 
 .contact-me {
     margin-bottom: 20px;
@@ -97,6 +127,11 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--mainGreen);
     color: #ffffff;
+}
+
+.contact-me h2{
+    font-size: 200%;
+    margin-bottom: 20px;
 }
 
 .footer {
@@ -114,6 +149,7 @@ a {
     font-size: 1em;
     /* 2vw */
 }
+
 
 
 
