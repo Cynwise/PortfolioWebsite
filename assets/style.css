@@ -1,40 +1,40 @@
 :root{
+
     --mainGreen: #264d00;
     overflow-x:hidden;
 }
 
 * {
+
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* header section */
+
 .headerNAV {
+
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--mainGreen);
     color: #ffffff;
 
-    /* from different class */
     display: inline-block;
     font-size: 48px;
     display: flex;
 
     justify-content: space-between;
     width: 100%;
-    position: fixed;
-
 }
 
-.headerNAV h1 {
-    
-    /* this isn't a great way to do this, doesn't resize correctly. */
-    font-size: 1em; 
-    /* 2vw */
+#headerName {
 
+    font-size: 5vw; 
 }
 
 .headerNAV div{
+
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -43,16 +43,21 @@
 }
 
 .headerNAV div ul {
+
     list-style-type: none;
     font-size: 25px;
 }
 
 .headerNAV div ul li {
+
     display: inline-block;
     margin-left: 25px;
 }
 
+/* main photo  */
+
 .mainPhoto {
+
     height: 500px;
     width: 105%;
     margin-bottom: 25px;
@@ -61,13 +66,17 @@
     background-position: right;
 }
 
+/* three content sections */
+
 .content {
+
     width: 90%; /*used to be 75%*/
     display: inline-block;
     margin-left: 20px;
 }
 
 .about-me {
+
     font-size: 1.5em;
     margin-bottom: 20px;
     padding: 50px;
@@ -78,17 +87,18 @@
 }
 
 .about-me h2{
-    font-size: 200%;
+
+    font-size: 150%;
     margin-bottom: 20px;
 }
 
 .about-me p{
 
     line-height: 150%;
-
 }
 
 .my-work {
+
     margin-bottom: 20px;
     padding: 50px;
     max-height: 1000px;
@@ -97,32 +107,48 @@
     color: #ffffff;
 }
 
+/* work and projects  */
+
 .my-work h2{
+
     font-size: 200%;
     margin-bottom: 20px;
 }
 
 .projectPhotos {
+
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 0;
     padding: 5px;
     width: 125%;
-    /* text-align: right; */
-    /* border-style: solid; */
     border-width: 5px;
   }
 
 .projectPhotos img{
-    /* max-height: 200px; */
+
     flex-wrap: wrap;
     max-width: 25%;
     margin: 10px 10px 10px 10px;
 }
 
+#project1{
+
+    width: 50%;
+    text-align: center;
+    position: relative;
+    
+}
+
+.text-block {
+
+    position: absolute;
+  bottom: 8px;
+  left: 16px;
+  }
+
 #project1:hover{
     opacity: .8;
-    width: 300%
 
 }
 
@@ -138,8 +164,10 @@
     opacity: .8;
 }
 
+/* contact info section  */
 
 .contact-me {
+
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -149,33 +177,40 @@
 }
 
 .contact-me h2{
+
     font-size: 200%;
     margin-bottom: 50px;
 }
 
 .contact-links{
+
     font-size: 175%;
     
     
 }
 
+/* footer section  */
+
 .footer {
+
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
+/* link tag design  */
 
-    /* * this isn't a great way to do this, doesn't resize correctly. */ 
+a {
+
+    color: #ffffff;
+    text-decoration: none; 
     font-size: 1em;
-    /* 2vw */
+
 }
 
 a:hover{
+
     color: #061306;
 }
 
