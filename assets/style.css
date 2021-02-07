@@ -80,7 +80,7 @@
     font-size: 1.5em;
     margin-bottom: 20px;
     padding: 50px;
-    max-height: 1000px;
+    /* max-height: 1000px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--mainGreen);
     color: #ffffff;
@@ -121,7 +121,6 @@
     flex-wrap: wrap;
     flex: 1 0 0;
     padding: 5px;
-    width: 125%;
     border-width: 5px;
   }
 
@@ -131,6 +130,7 @@
     max-width: 25%;
     margin: 10px 10px 10px 10px;
 }
+
 
 .container {
     position: relative;
