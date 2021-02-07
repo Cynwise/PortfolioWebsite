@@ -132,6 +132,24 @@
     margin: 10px 10px 10px 10px;
 }
 
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    font-size: 2vw;
+    background-color: #514948;
+    border-style: solid;
+    border-color: white
+    
+  }
+
 #project1{
 
     width: 50%;
@@ -140,12 +158,6 @@
     
 }
 
-.text-block {
-
-    position: absolute;
-  bottom: 8px;
-  left: 16px;
-  }
 
 #project1:hover{
     opacity: .8;
